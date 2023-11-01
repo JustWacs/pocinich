@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container-navbar {
+    position: fixed;
+    display: flex;
+    width: 100%;            
+    padding: 20px;
+    z-index: 1000;
+    background-color: #ffffff;
+}
+
+.ul-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.li-navbar {
+    list-style: none;
+    display: flex;
+    padding-right: 70px;
+}
+
+li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    display: flex;
+    font-size: 15px;
+    position: relative;
+    transition: font-weight 0.3s ease;
+}
+
+li a:after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #000000; /* You can set the underline color here */
+    transition: width 0.3s ease;
+}
+
+li a:hover:after {
+    width: 100%;
+}
+
+
+.logo{
+    width: 100px;
+    padding-right: 800px;
+}
+
+.home-container img{
+    width: 100%;
+    margin-top: 40px;
+}
+
+.home-container{
+    display: flex;
+    justify-content: center;
+}
+
