@@ -1,7 +1,7 @@
 # pocinich
 Tempat jual beli poci
 
-Preview: <a href="https://justwacs.github.io/pocinich/" target="_blank">Klik Disini</a>
+Preview : [Klik Disini](https://justwacs.github.io/pocinich/)
 
 ## Authors
 
