@@ -13,7 +13,6 @@ body {
     width: 100%;            
     padding: 20px;
     z-index: 1000;
-    background-color: #ffffff;
 }
 
 .ul-navbar {
@@ -32,7 +31,7 @@ li a {
     text-decoration: none;
     color: rgb(0, 0, 0);
     display: flex;
-    font-size: 15px;
+    font-size: 18px;
     position: relative;
     transition: font-weight 0.3s ease;
 }
@@ -63,8 +62,50 @@ li a:hover:after {
     margin-top: 40px;
 }
 
-.home-container{
+.home-container {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    height: 100vh;
+     font-size: 40px;
+     padding-left: 50px;
+}
+
+.home-container h3{
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.home{
+    background-image: url(foto/background\ home-01.png);
+    background-position: center; /* Adjust the background position here */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    background-size: 1600px; /* Ensure the background image covers the entire element */
+    min-height: 100vh;
+}
+
+.foto-home{
+    padding-left: 250px;
+}
+
+.btn-home{
+    max-width: 200px;
+    padding: 10px 20px;
+    background-color: #59CB5E;
+    text-align: center;
+    border-radius: 42px;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    border-style: solid;
+    border-color: #59CB5E;
+    transition: all 0.3s;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.btn-home:hover{
+    background-color: #fff;
+    border-color: #59CB5E;
+    color: #59CB5E;
 }
 
