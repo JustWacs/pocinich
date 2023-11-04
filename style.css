@@ -1,111 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
+/* Navbar */
 .container-navbar {
-    position: fixed;
-    display: flex;
-    width: 100%;            
-    padding: 20px;
-    z-index: 1000;
+  position: fixed;
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  z-index: 1000;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.373);
 }
 
 .ul-navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .li-navbar {
-    list-style: none;
-    display: flex;
-    padding-right: 70px;
+  list-style: none;
+  display: flex;
+  padding-right: 70px;
 }
 
 li a {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    display: flex;
-    font-size: 18px;
-    position: relative;
-    transition: font-weight 0.3s ease;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  display: flex;
+  font-size: 18px;
+  position: relative;
+  transition: font-weight 0.3s ease;
 }
 
 li a:after {
-    content: '';
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: #000000; /* You can set the underline color here */
-    transition: width 0.3s ease;
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #000000; /* You can set the underline color here */
+  transition: width 0.3s ease;
 }
 
 li a:hover:after {
-    width: 100%;
+  width: 100%;
 }
 
-
-.logo{
-    width: 100px;
-    padding-right: 800px;
+.logo {
+  width: 100px;
 }
+/* navbar end */
 
-.home-container img{
-    width: 100%;
-    margin-top: 40px;
+/* home */
+.home-container img {
+  width: 100%;
+  margin-top: 40px;
 }
 
 .home-container {
-    display: flex;
-    align-items: center;
-    height: 100vh;
-     font-size: 40px;
-     padding-left: 50px;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  font-size: 40px;
+  padding-left: 50px;
+  background-image: url(foto/background-home-01.png);
+  background-position: center; /* Adjust the background position here */
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
+  background-size: 1800px; /* Ensure the background image covers the entire element */
+  background-position-x: -20rem;
 }
 
-.home-container h3{
-    font-size: 20px;
-    padding-bottom: 20px;
+.home-container h3 {
+  font-size: 20px;
+  padding-bottom: 20px;
 }
 
-.home{
-    background-image: url(foto/background\ home-01.png);
-    background-position: center; /* Adjust the background position here */
-    background-repeat: no-repeat; /* Prevent the background image from repeating */
-    background-size: 1600px; /* Ensure the background image covers the entire element */
-    min-height: 100vh;
+.home {
+  /* background-image: url(foto/background-home-01.png); */
+  background-position: center; /* Adjust the background position here */
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
+  background-size: 1600px; /* Ensure the background image covers the entire element */
+  min-height: 100vh;
 }
 
-.foto-home{
-    padding-left: 250px;
+.foto-home {
+  padding-left: 250px;
+  filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.75));
 }
 
-.btn-home{
-    max-width: 200px;
-    padding: 10px 20px;
-    background-color: #59CB5E;
-    text-align: center;
-    border-radius: 42px;
-    font-size: 30px;
-    font-weight: bold;
-    color: white;
-    border-style: solid;
-    border-color: #59CB5E;
-    transition: all 0.3s;
-    text-decoration: none;
-    transition: all 0.3s;
+.btn-home {
+  max-width: 200px;
+  padding: 10px 20px;
+  background-color: #59cb5e;
+  text-align: center;
+  border-radius: 42px;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  border-style: solid;
+  border-color: #59cb5e;
+  transition: all 0.3s;
+  text-decoration: none;
+  transition: all 0.3s;
 }
 
-.btn-home:hover{
-    background-color: #fff;
-    border-color: #59CB5E;
-    color: #59CB5E;
+.btn-home:hover {
+  background-color: #fff;
+  border-color: #59cb5e;
+  color: #59cb5e;
+}
+/* home end */
+
+/* menu */
+.menu-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100rem;
+  font-size: 40px;
+  flex-direction: column;
 }
 
+.header-upper-menu {
+  margin: 5rem 0;
+}
+
+.upper-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.column-upper-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* position: relative; */
+  background-color: #59cb5e;
+  border-radius: 40px;
+}
+
+.menu-list {
+  /* position: absolute; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: aliceblue; */
+  width: 350px;
+  height: 450px;
+  transform: translateY(-3rem);
+}
+
+hr{
+  width: 50%;
+  height: 5px;
+  background-color: #000000;
+  border-radius: 5px;
+  margin-top: 10px;
+  border: none;
+}
+
+
+.menu-list img {
+  width: 300px;
+  height: 300px;
+  
+}
+
+.upper-menu .column-upper-menu .menu-list:nth-child(2) {
+  
+}
+
+.grid-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+.btn-menu {
+  width: 200px;
+  padding: 10px 20px;
+  background-color: white;
+  text-align: center;
+  border-radius: 42px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #59cb5e;
+  border-style: solid;
+  border-color: #59cb5e;
+  transition: all 0.3s;
+  text-decoration: none;
+  border-width: 3px;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-menu:hover {
+  background-color: #fff;
+  border-color: #59cb5e;
+  color: #59cb5e;
+}
+
+.column-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* menu end */
