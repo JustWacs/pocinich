@@ -119,6 +119,53 @@ li a:hover:after {
   border-color: #59cb5e;
   color: #59cb5e;
 }
+
+/* CSS for the animation */
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(50px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+#animated-title {
+  animation: fadeInUp 1.5s ease forwards;
+}
+
+/* CSS for the animation */
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(50px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+#animated-image {
+  animation: fadeInUp 1.5s ease forwards;
+}
+
+.cursor{
+  display: inline-block;
+  width: 3px;
+  background-color: black;
+  margin-left: 0.1rem;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink{
+  0% {background-color: #000000;}
+  50% { background-color: transparent;}
+  100% { background-color: #000000;}
+}
+
 /* home end */
 
 /* menu */
