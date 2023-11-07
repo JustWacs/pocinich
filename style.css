@@ -3,6 +3,7 @@
 * {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -373,3 +374,85 @@ hr {
   margin-left: -5%;
 }
 /* end about */
+
+/* contact */
+
+.contact {
+  overflow-x: hidden;
+  background-image: url(foto/about\ background-01.png);
+  background-position: -450px 0px;
+}
+
+.head {
+  font-size: 30px;
+  text-align: center;
+  transform: translateY(150px);
+}
+
+.map {
+  margin-left: 33rem;
+  margin-right: 25rem;
+  margin-top: 230px
+}
+
+.wa {
+  display: flex;
+  margin-top: 30px;
+}
+
+.wa i {
+  color: rgb(0, 255, 0); 
+  animation: animateText 2s infinite;
+}
+
+.wa a {
+  margin-left: 43px;
+  text-decoration: none;
+  color: black;
+}
+
+.location {
+  display: flex;
+  margin-top: 50px;
+}
+
+.location a {
+  margin-bottom: 50px;
+  margin-left: 44px;
+  text-decoration: none;
+  color: black;
+}
+
+.location i {
+  animation: animateText 2s infinite;
+}
+
+.head2 {
+  font-size: 30px;
+  text-align: center;
+  transform: translateY(320px);
+}
+
+.g-map {
+  transform: translateX(330px);
+  height: 300px;
+  margin-top: 350px;
+  margin-bottom: 100px;
+}
+
+@keyframes animateText {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* end contact */
