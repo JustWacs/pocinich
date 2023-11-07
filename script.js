@@ -40,10 +40,10 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 const poci = document.querySelector(".poci");
-const img = poci.querySelector("img");
+const adit = poci.querySelector(".adit");
 
 poci.addEventListener("mouseenter", () => {
-  gsap.to(img, { scale: 1.1, duration: 0.5, ease: "power2.out" });
+  gsap.to(adit, { scale: 1.1, duration: 0.5, ease: "power2.out" });
 });
 
 poci.addEventListener("mousemove", (e) => {
@@ -56,11 +56,11 @@ poci.addEventListener("mousemove", (e) => {
   const deltaX = (mouseX - centerX) / 15; // Sesuaikan faktor pergerakan
   const deltaY = (mouseY - centerY) / 15; // Sesuaikan faktor pergerakan
 
-  gsap.to(img, { x: deltaX, y: deltaY, duration: 0.2, ease: "power2.out" });
+  gsap.to(adit, { x: deltaX, y: deltaY, duration: 0.2, ease: "power2.out" });
 });
 
 poci.addEventListener("mouseleave", () => {
-  gsap.to(img, { scale: 1, x: 0, y: 0, duration: 0.5, ease: "power2.out" });
+  gsap.to(adit, { scale: 1, x: 0, y: 0, duration: 0.5, ease: "power2.out" });
 });
 
 // menu
