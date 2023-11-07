@@ -117,3 +117,15 @@ ScrollReveal().reveal(".slide-up", {
 });
 
 // menu end
+
+//Faq
+
+const faqs = document.querySelectorAll(".faq");
+
+faqs.forEach((faq) =>{
+  faq.addEventListener("click", () => {
+    faq.classList.toggle("active");
+  });
+});
+
+//Faq end
