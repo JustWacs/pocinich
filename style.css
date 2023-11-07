@@ -235,6 +235,7 @@ hr {
 .menu-upper-list img {
   width: 300px;
   height: 300px;
+  filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.5));
 }
 
 .upper-menu .column-upper-menu:nth-child(2) img {
@@ -252,7 +253,7 @@ hr {
 }
 
 .upper-menu .column-upper-menu:nth-child(3) {
-  background-color: #F493FD;
+  background-color: #c96b00;
 }
 
 .grid-container {
@@ -307,6 +308,10 @@ hr {
   margin: 4rem 0;
 }
 
+.column-menu img {
+  filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.5));
+}
+
 .menu-list {
   /* position: absolute; */
   display: flex;
@@ -329,6 +334,7 @@ hr {
   transform: translateY(-2rem);
   font-size: 25px;
 }
+
 /* menu end */
 
 
