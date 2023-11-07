@@ -39,3 +39,29 @@ function erase() {
 document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
   if(textArray.length) setTimeout(type, newTextDelay + 250);
 });
+
+
+
+const poci = document.querySelector('.poci');
+const img = poci.querySelector('img');
+
+poci.addEventListener('mouseenter', () => {
+  gsap.to(img, { scale: 1.1, duration: 0.5, ease: 'power2.out' });
+});
+
+poci.addEventListener('mousemove', (e) => {
+  const containerRect = poci.getBoundingClientRect();
+  const centerX = containerRect.left + containerRect.width / 2;
+  const centerY = containerRect.top + containerRect.height / 2;
+  const mouseX = e.clientX;
+  const mouseY = e.clientY;
+
+  const deltaX = (mouseX - centerX) / 15; // Sesuaikan faktor pergerakan
+  const deltaY = (mouseY - centerY) / 15; // Sesuaikan faktor pergerakan
+
+  gsap.to(img, { x: deltaX, y: deltaY, duration: 0.2, ease: 'power2.out' });
+});
+
+poci.addEventListener('mouseleave', () => {
+  gsap.to(img, { scale: 1, x: 0, y: 0, duration: 0.5, ease: 'power2.out' });
+});
