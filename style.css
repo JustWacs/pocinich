@@ -444,15 +444,15 @@ hr {
 }
 
 .contact-all {
-  margin-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  height: 100vh;
 }
 
 .map {
-  margin-top: 300px;
+  margin-top: 200px;
   margin-left: 6rem;
   transform: translateY(-99px);
 }
