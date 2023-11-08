@@ -428,22 +428,32 @@ hr {
 
 /* contact */
 
+/* contact */
+
 .contact {
   overflow-x: hidden;
   background-image: url(foto/about\ background-01.png);
-  background-position: -450px 0px;
+  background-position: -480px 0px;
 }
 
 .head {
   font-size: 30px;
   text-align: center;
-  transform: translateY(150px);
+  transform: translateY(120px);
+}
+
+.contact-all {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
 }
 
 .map {
-  margin-left: 33rem;
-  margin-right: 25rem;
-  margin-top: 230px
+  margin-top: 300px;
+  margin-left: 6rem;
+  transform: translateY(-99px);
 }
 
 .wa {
@@ -454,6 +464,7 @@ hr {
 .wa i {
   color: rgb(0, 255, 0); 
   animation: animateText 2s infinite;
+  font-size: 40px;
 }
 
 .wa a {
@@ -468,7 +479,6 @@ hr {
 }
 
 .location a {
-  margin-bottom: 50px;
   margin-left: 44px;
   text-decoration: none;
   color: black;
@@ -476,6 +486,7 @@ hr {
 
 .location i {
   animation: animateText 2s infinite;
+  font-size: 40px;
 }
 
 .head2 {
@@ -485,10 +496,11 @@ hr {
 }
 
 .g-map {
-  transform: translateX(330px);
-  height: 300px;
-  margin-top: 350px;
-  margin-bottom: 100px;
+  transform: translateY(50px);
+  margin-left: 80px;
+  border-top-right-radius: 200px;
+  border-bottom-left-radius: 200px;
+  filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.75));
 }
 
 @keyframes animateText {
