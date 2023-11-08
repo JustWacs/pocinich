@@ -396,6 +396,7 @@ hr {
 
 .about-content {
   display: flex;
+  height: 100vh;
 }
 
 .about-content .poci {
