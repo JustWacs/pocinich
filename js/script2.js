@@ -49,3 +49,4 @@ ScrollReveal().reveal(".slide-up", {
   opacity: 0.3,
   scale: 0.9
 });
+
